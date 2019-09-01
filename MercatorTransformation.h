@@ -18,13 +18,6 @@ Further Information in "Map Projections - A working Manual" can be find on www.e
 Andreas Bernatzky 25.08.2019
  */
 
-#define D_R (M_PI / 180.0)
-#define R_D (180.0 / M_PI)
-#define EarthRadiusX 6378137.0
-#define EarthRadiusY 6356752.3142
-#define RATIO (EarthRadiusY/EarthRadiusX)
-#define ECCENT (sqrt(1.0 - (RATIO * RATIO)))
-#define COM (0.5 * ECCENT)
 
 static double deg_rad(double ang);
 //Converts longitude coordinates into x-Coordinate of Mercator Transformation
